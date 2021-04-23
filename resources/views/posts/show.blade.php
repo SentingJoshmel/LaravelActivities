@@ -38,6 +38,18 @@
                                 <input id="created" type="datetime" class="form-control" name="created" disabled value={{ $post->created_at }}>
                             </div>
                         </div>
+
+                        <div class="form-group row">
+                            <label for="img" class="col-md-4 col-form-label text-md-right">Post Image</label>
+                            <div class="col-md-6">
+                                @if ($post->img)
+                                    <img width="270px"src="{{ asset('/storage/img/'.$post->img) }} ">
+                                @else
+                                    No image available
+                                @endif
+                            </div>
+                        </div>
+
                         <a class="btn button btn-info" href="/posts">Back</a>
                     </form>
                 </div>
