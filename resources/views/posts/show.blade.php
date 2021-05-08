@@ -51,7 +51,11 @@
                         </div>
 
                         <a class="btn button btn-info" href="/posts">Back</a>
+
                     </form>
+                    <br>
+                    
+                    @include('/posts/comments')
                 </div>
             </div>
         </div>
